@@ -1,0 +1,11 @@
+language: java
+jdk: -openjdk8
+
+addons: 
+    sonarcloud:
+        organization: "tddumont"
+        token: d226462c603ac792c5cfb7c9f6157f60cddd6efa
+
+script:
+- ant build
+- sonar-scanner
